@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechGarage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f1116;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: #0f1116;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5em;
+      font-weight: 700;
+      color: #00bfff;
+    }
+
+    nav a {
+      margin-left: 30px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: url("images/background.jpg") center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero-content {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      font-weight: 800;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      font-size: 1.1em;
+      color: #ddd;
+    }
+
+    .hero button {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #00bfff;
+      color: #fff;
+      font-size: 1em;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #444;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #1a1a1a;
+      color: #00bfff;
+    }
+
+    td {
+      background-color: #1c1c1c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background-color: #0f1116;
+      color: #777;
+    }
+
+    a.button {
+      display: inline-block;
+      background-color: #00bfff;
+      color: #000;
+      padding: 10px 20px;
+      margin-top: 15px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .spacer {
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🔧 TechGarage</div>
+    <nav>
+      <a href="#about">O nas</a>
+      <a href="#offer">Oferta</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Witaj w TechGarage</h1>
+      <p>Profesjonalna pomoc w konfiguracji sprzętu, streamowaniu oraz serwerach Discord.<br>
+      Pomagamy w ustawianiu OBS, tworzeniu overlay i tuningu twojego PC.</p>
+      <button onclick="document.getElementById('offer').scrollIntoView({ behavior: 'smooth' })">Przejdź do oferty</button>
+    </div>
+  </div>
+
+  <div class="spacer" id="about"></div>
+  <section>
+    <h2>O nas</h2>
+    <h3>Czym się zajmujemy?</h3>
+    <p>
+      TechGarage to firma, która zajmuje się szeroko pojętą technologią i gamingiem. <br/>
+      Specjalizujemy się w konfiguracji serwerów Discord, pomocy z OBS, tuningiem komputerów oraz tworzeniem overlayi.
+    </p>
+  </section>
+
+  <div class="spacer" id="offer"></div>
+  <section>
+    <h2>Oferta</h2>
+    <h3>Nasza Oferta</h3>
+    <table>
+      <tr><th>Usługa</th><th>Cena</th></tr>
+      <tr><td>Serwer Discord (prosty)</td><td>50–100 zł</td></tr>
+      <tr><td>Serwer Discord (premium)</td><td>150–300 zł</td></tr>
+      <tr><td>Setup OBS + overlay</td><td>80–200 zł</td></tr>
+      <tr><td>Pomoc z PC / tuning zdalny</td><td>50–100 zł/h</td></tr>
+      <tr><td>Overlay + alert pack</td><td>100–300 zł</td></tr>
+    </table>
+  </section>
+
+  <div class="spacer" id="contact"></div>
+  <section>
+    <h2>Kontakt</h2>
+    <p>Masz pytania? Napisz do nas na Discordzie:</p>
+    <a href="https://discord.gg/twojserwer" target="_blank" class="button">Dołącz do Discorda</a>
+  </section>
+
+  <footer>
+    &copy; 2025 TechGarage. Kontakt: Discord
+  </footer>
+
+</body>
+</html>
